@@ -1,0 +1,25 @@
+[
+('nonlinear_abrupt_chocolaterotation_binary.csv', [5000,10000,15000,20000]),
+('nonlinear_abrupt_chocolaterotation_multi.csv', [5000,10000,15000,20000]),
+
+('nonlinear_abrupt_chocolaterotation_noise_and_redunce_binary.csv', [5000,10000,15000,20000]),
+('nonlinear_abrupt_chocolaterotation_noise_and_redunce_multi.csv', [5000,10000,15000,20000]),
+
+('nonlinear_abrupt_chocolaterotation_noise_binary.csv', [5000,10000,15000,20000]),
+('nonlinear_abrupt_chocolaterotation_noise_multi.csv', [5000,10000,15000,20000]),
+
+('nonlinear_abrupt_chocolaterotation_redunce_binary.csv', [5000,10000,15000,20000]),
+('nonlinear_abrupt_chocolaterotation_redunce_multi.csv', [5000,10000,15000,20000]),
+
+('nonlinear_sudden_chocolaterotation_binary.csv', [5000,10000,15000,20000]),
+('nonlinear_sudden_chocolaterotation_multi.csv', [5000,10000,15000,20000]),
+
+('nonlinear_sudden_chocolaterotation_noise_and_redunce_binary.csv', [5000,10000,15000,20000]),
+('nonlinear_sudden_chocolaterotation_noise_and_redunce_multi.csv', [5000,10000,15000,20000]),
+
+('nonlinear_sudden_chocolaterotation_noise_binary.csv', [5000,10000,15000,20000]),
+('nonlinear_sudden_chocolaterotation_noise_multi.csv', [5000,10000,15000,20000]),
+
+('nonlinear_sudden_chocolaterotation_redunce_binary.csv', [5000,10000,15000,20000]),
+('nonlinear_sudden_chocolaterotation_redunce_multi.csv', [5000,10000,15000,20000])
+]

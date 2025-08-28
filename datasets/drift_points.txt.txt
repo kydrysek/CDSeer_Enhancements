@@ -1,0 +1,46 @@
+[
+('own_sine_paper_balanced_noise_230.csv',known,[3000,10000]),
+('own_sine_paper_balanced_nonoise_230.csv',known,[3000,10000]),
+('own_sine_paper_imbalanced_noise_230.csv',known,[3000,10000]),
+('own_sine_paper_imbalanced_nonoise_230.csv',known,[3000,10000]),
+
+('own_sine_paper_balanced_noise_230_stretched.csv',known,[3000,10000]),
+('own_sine_paper_balanced_nonoise_230_stretched.csv',known,[3000,10000]),
+('own_sine_paper_imbalanced_noise_230_stretched.csv',known,[3000,10000]),
+('own_sine_paper_imbalanced_nonoise_230_stretched.csv',known,[3000,10000]),
+
+
+
+('own_sea_extra_cols.csv',known,[3000,10000]),
+('own_sea_no_extra_cols.csv',known,[3000,10000]),
+('own_sea_noise_extra_cols_012_2percent.csv',known,[3000,10000]),
+('own_sea_noise_extra_cols_0123_2percent.csv',known,[3000,10000,16000]),
+('own_sea_noise_no_extra_cols_012_2percent.csv',known,[3000,10000]),
+('own_sea_noise_no_extra_cols_0123_2percent.csv',known,[3000,10000,16000]),
+
+('own_sea_extra_cols_stretched.csv',known,[3000,10000]),
+('own_sea_no_extra_cols_stretched.csv',known,[3000,10000]),
+('own_sea_noise_extra_cols_012_2percent_stretched.csv',known,[3000,10000]),
+('own_sea_noise_extra_cols_0123_2percent_stretched.csv',known,[3000,10000,16000]),
+('own_sea_noise_no_extra_cols_012_2percent_stretched.csv',known,[3000,10000]),
+('own_sea_noise_no_extra_cols_0123_2percent_stretched.csv',known,[3000,10000,16000]),
+
+('own_sea_extra_cols_stretched_y.csv',known,[3000,10000]),
+('own_sea_no_extra_cols_stretched_y.csv',known,[3000,10000]),
+('own_sea_noise_extra_cols_012_2percent_stretched_y.csv',known,[3000,10000]),
+('own_sea_noise_extra_cols_0123_2percent_stretched_y.csv',known,[3000,10000,16000]),
+('own_sea_noise_no_extra_cols_012_2percent_stretched_y.csv',known,[3000,10000]),
+('own_sea_noise_no_extra_cols_0123_2percent_stretched_y.csv',known,[3000,10000,16000]),
+
+
+('harv_mixed_0101_gradual.csv',known-gradual 1000 width,[9500,20000,30500]),
+('harv_mixed_1010_gradual.csv',known-gradual 1000 width,[9500,20000,30500]),
+('harv_sine_0123_gradual.csv',known-gradual 1000 width,[9500,20000,30500]),
+('harv_sea_0123_gradual_noise_0.2.csv',known-gradual 1000 width,[9500,20000,30500]),
+('harv_sea_3210_gradual_noise_0.2.csv',known-gradual 1000 width,[9500,20000,30500]),
+
+
+('NOAA.csv',estimated,[4105, 8682, 11715, 13248, 14229]),
+
+('elec2.csv',estimated-gradual?,[2249, 2956, 4392, 6659, 7190, 7911, 9314, 10014, 11421, 11832, 12888, 13974, 15790, 17024, 18112, 18752, 19123, 19351, 20182, 20380, 21151, 22390, 23354, 23818, 24109, 24713, 25606, 27007, 27414, 28931, 29444, 30221, 30830, 31870, 32615, 33881, 34215, 34481, 35382, 36479, 37136, 40112, 41020, 42306, 42772, 44283, 44884])
+]
