@@ -110,7 +110,7 @@ def retrain_model(model, oracle:Oracle, training_size:int):
 
 def initialise_model_and_inspector(model_class:object,oracle:Oracle, inspector_curiosity_factor:float, training_size:int, memory_size:int,
                                    insp_window_size:int, cluster_method:Optional[str],random_state:int, inspector_model,
-                                   clustering_params_list,log_me=False, keep_known_labels=True,initialise_inspector=True,model_object:object=None):    
+                                   clustering_params,log_me=False, keep_known_labels=True,initialise_inspector=True,model_object:object=None):    
 
     # 1. Train reference model
     # main_model = Pipeline([("scaler",MinMaxScaler()),("model",model_class(random_state=RANDOM_SEED,n_jobs=N_JOBS))])
@@ -127,7 +127,7 @@ def initialise_model_and_inspector(model_class:object,oracle:Oracle, inspector_c
     # drift_detector = capymoa.drift.detectors.DDM(min_n_instances=100,out_control_level=3)  # Initialize the drift detector
 
     # 3. Create an Inspector object - inspector also needs  epsilon for DBSCAN clustering, so calculate this     
-    config={"random_seed":random_state, "log_extras":log_me, "cluster_method":cluster_method, "clustering_params":clustering_params_list}
+    config={"random_seed":random_state, "log_extras":log_me, "cluster_method":cluster_method, "clustering_params":clustering_params}
         #     "perform_clustering":perform_clustering,"scale_for_clustering":scale_for_clustering,"use_model_pred":use_model_pred}
 
         
@@ -462,7 +462,7 @@ def run_experiment(file_path, max_size,inspector_curiosity_factor,oracle_complia
                 initialise_inspector = (inspector is None) and run_inspector                
                 model, inspector_tmp = initialise_model_and_inspector(model_class,oracle,inspector_curiosity_factor,training_size,memory_size, insp_window_size, 
                                                                   cluster_method,random_state=random_state,inspector_model=inspector_model, keep_known_labels=keep_known_labels, 
-                                                                  clustering_params_list=clustering_params_list, initialise_inspector=initialise_inspector,
+                                                                  clustering_params=clustering_params_list, initialise_inspector=initialise_inspector,
                                                                   model_object=model_object)
                 if initialise_inspector: inspector = inspector_tmp
 
@@ -517,7 +517,7 @@ def run_experiment(file_path, max_size,inspector_curiosity_factor,oracle_complia
             else:
                 model, _ = initialise_model_and_inspector(model_class,oracle,inspector_curiosity_factor,training_size,memory_size, insp_window_size, 
                                                                   cluster_method,random_state=random_state,inspector_model=inspector_model, keep_known_labels=keep_known_labels, 
-                                                                  clustering_params_list=clustering_params_list, initialise_inspector=False, model_object=model_object)
+                                                                  clustering_params=clustering_params_list, initialise_inspector=False, model_object=model_object)
             
 
             if not run_quiet: print(f"Drift detected at step {step_number} with model prediction {pred_model}"+("" if dont_propagate else f" and inspector prediction {pred_inspector}"))
